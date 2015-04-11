@@ -1,0 +1,381 @@
+<!--A Design by W3layouts
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>小柴的主页</title>
+<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="./js/jquery.min.js"></script>
+<!-- Custom Theme files -->
+<link href="./css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- Google Fonts --->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="./js/easing.js"></script>
+<script type="text/javascript" src="./js/move-top.js"></script>
+					<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+</script>
+
+</head>
+<body>
+	<!-- Header Starts Here -->
+	<div class="main-header">
+	<div class="header" id="profile">
+		<div class="container">
+			<div class="header-top">
+				<span class="menu"></span>
+				<ul class="nav">
+					<li><a href="#profile" class="scroll">Profile</a></li>
+					<li><a href="#resume" class="scroll">Resume</a></li>
+					<li><a href="#work" class="scroll">Works</a></li>
+					<li class="active" class="scroll"><a href="#contact" class="scroll">Contact</a></li>
+				</ul>
+				<script>
+					$( "span.menu" ).click(function() {
+					  $( ".header-top ul.nav" ).slideToggle( "slow", function() {
+					    // Animation complete.
+					  });
+					});
+				</script>				
+			</div>
+		</div>
+	</div>
+	<!-- Header Ends Here -->
+	<!--- Banner Starts Here -->
+	<div class="banner">
+		<div class="container">
+			<div class="banner-top">
+				<div class="logo">
+					<a href="index.html"><img src="./images/logo.png" alt=""/></a>
+					<span class="line"></span>
+				</div>
+				<p>当才华还支撑不起野心的时候，就应该静下心来学习</p>
+				<a href="#resume" class="scroll"><img src="./images/scroll.png" class="scroll1" alt=""/></a>
+			</div>
+		</div>
+	</div>
+	<!--- Banner Ends Here -->
+	<!--- Social Bar Starts Here -->
+	<div class="social">
+		<div class="container">
+			<div class="social-top">
+				<ul class="social-ico">
+					<li><i class="tw"></i></li>
+					<li><i class="fa"></i></li>
+					<li><i class="gp"></i></li>
+					<li><i class="pin"></i></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!--- Social Bar Ends Here -->
+	<!--- Resume Starts Here --->
+	<div class="resume" id="resume">
+		<div class="container">
+			<div class="resume-top">
+				<h3>Resume</h3>
+				<small class="line1"><span> </span></small>
+				<!-- <p>Phasellus massa metus, pretium eu leo dapibus, elementum viverra libero. Duis vel mauris id justo accumsan pretium vel eu turpis. Ut hendrerit convallis magna. Duis faucibus ligula nec felis aliquet, at ultricies diam pellentesque.
+Sed cursus erat eget rutrum consectetur.</p>
+				<a href="#">Employment</a> -->
+			</div>
+			<div class="scrollbar" id="ex3">
+			<div class="content">
+				<div class="resume-bot">
+					<h4>2014.6 - Present</h4>
+					<span> </span>
+					<h5>漫漫考研路</h5>
+					<p>告别了</p>
+				</div>
+				<div class="resume-bot">
+					<h4>2014.2 - 2014.5</h4>
+					<span> </span>
+					<h5>发起“二货网”项目</h5>
+					<a href="https://www.erhuowang.cn">www.erhuowang.cn</a>
+					<p>大三下学期，召集基友组建团队，设计并开发了个人服务交易平台“二货网”。在二货网上你可以把无形的服务当做商品出售。二货网也获得了学校创业大赛的三等奖</p>
+					<!-- <small>tortor Vivamus</small> -->
+				</div>
+				<div class="resume-bot">
+					<h4>2013.9 - 2014.5</h4>
+					<span> </span>
+					<h5>参与“微学堂”项目</h5>
+					<a href="https://www.wstudy.cn">www.wstudy.cn</a>
+					<p>大三上学期，有幸加入元苏至易网络科技有限公司，参与了“微学堂”项目的Webapp端的开发</small>
+				</div>
+				<div class="resume-bot">
+					<h4>2013.5 - 2013.9</h4>
+					<span> </span>
+					<h5>发起“二手物品交易平台”项目</h5>
+					<a href="https://www.google.com">www.microsoft.com</a>
+					<p>这是我第二次参与大学生创新创业课题，与第一次不同的是，我成为了这个项目的组织者</p>
+					<small>tortor Vivamus</small>
+				</div>
+				<div class="resume-bot">
+					<h4>2012.3 - 2013.5</h4>
+					<span> </span>
+					<h5>参与“基于中介值定理的学生绩点管理系统”</h5>
+					<a href="https://www.google.com">www.microsoft.com</a>
+					<p>大一下学期，第一次参与大学生创新创业项目，第一次合作完成了一个软件，颇有成就感</p>
+					<!-- <small>tortor Vivamus</small> -->
+				</div>
+			</div>
+		    </div>
+		    <div class="clearfix"></div>
+		    <a href="#work" class="scroll"><img src="./images/scroll2.png" class="scroll" alt=""/></a>
+		</div>
+	</div>
+	<!--- Resume Ends Here --->
+	<!--- Work Starts Here --->
+	<div class="work" id="work">
+		<div class="container">
+			<div class="work-top">
+				<h3>Work</h3>
+				<small class="line1"><span> </span></small>
+				<!-- <p>Phasellus massa metus, pretium eu leo dapibus, elementum viverra libero. Duis vel mauris id justo accumsan pretium vel eu turpis. Ut hendrerit convallis magna. Duis faucibus ligula nec felis aliquet, at ultricies diam pellentesque.</p>
+				<small class="work-tbot">Sed cursus erat eget rutrum consectetur.</small> -->
+			</div>
+			<ul id="filters" class="clearfix">
+ 						<li><span class="filter active" data-filter="app card icon logo web">全部</span></li>
+						<li><span class="filter active">/</span></li>
+						<li><span class="filter" data-filter="app">我的二货网</span></li>
+						<li><span class="filter">/</span></li>
+						<li><span class="filter" data-filter="card">我的生活</span></li>
+						<li><span class="filter">/</span></li>
+						<!-- <li><span class="filter" data-filter="icon">Photography</span></li> -->
+					</ul>
+					<div id="portfoliolist">
+					<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio app mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog1" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/2.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+					</div>		
+					<div class="portfolio card mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog2" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/5.JPG" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+					</div>				
+					<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog3" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/3.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+					</div>	
+					<div class="portfolio icon mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/4.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+					</div>			
+					<div class="portfolio icon mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog4" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/5.JPG" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+					</div>			
+					<div class="portfolio icon mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="portfolio icon mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+						<div class="portfolio-wrapper">		
+							<a href="#small-dialog5" class="b-link-stripe b-animate-go  thickbox play-icon popup-with-zoom-anim">
+						     <img src="./images/1.jpg" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="./images/icon-eye.png" alt=""/></h2>
+						  	</div></a>
+		                </div>
+					</div>
+					<div class="clearfix"></div>	
+				</div>
+			<!---- Script for gallery Here --->
+				<script type="text/javascript" src="./js/jquery.mixitup.min.js"></script>
+					<script type="text/javascript">
+					$(function () {
+						
+						var filterList = {
+						
+							init: function () {
+							
+								// MixItUp plugin
+								// http://mixitup.io
+								$('#portfoliolist').mixitup({
+									targetSelector: '.portfolio',
+									filterSelector: '.filter',
+									effects: ['fade'],
+									easing: 'snap',
+									// call the hover effect
+									onMixEnd: filterList.hoverEffect()
+								});				
+							
+							},
+							
+							hoverEffect: function () {
+							
+								// Simple parallax effect
+								$('#portfoliolist .portfolio').hover(
+									function () {
+										$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+										$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+									},
+									function () {
+										$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+										$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+									}		
+								);				
+							
+							}
+				
+						};
+						
+						// Run the show!
+						filterList.init();
+						
+						
+					});	
+					</script>
+			<!--- Gallery Script Ends --->
+			<!---pop-up-box---->
+					  <script type="text/javascript" src="./js/modernizr.custom.min.js"></script>    
+					<link href="./css/popuo-box.css" rel="stylesheet" type="text/css" media="all"/>
+					<script src="./js/jquery.magnific-popup.js" type="text/javascript"></script>
+			<!---//pop-up-box---->
+			<div id="small-dialog" class="mfp-hide">
+						<div class="image-top">
+							<img src="./images/1.jpg"/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog1" class="mfp-hide">
+						<div class="image-top">
+							<img src="./images/2.jpg"/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog2" class="mfp-hide">
+						<div class="image-top">
+							<img src="./images/5.JPG"/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog3" class="mfp-hide">
+						<div class="image-top">
+							<img src="./images/3.jpg"/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog4" class="mfp-hide">
+						<div class="image-top">
+							<img src="./images/4.jpg"/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+					<div id="small-dialog5" class="mfp-hide">
+						<div class="image-top">
+							<img src="./images/2.jpg"/>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+						</div>
+					</div>
+			<script>
+						$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+						});
+																						
+						});
+				</script>		
+			<a href="#contact" class="scroll"><img src="./images/scroll4.png" class="scroll" alt=""/></a>
+		</div>
+	</div>
+	<!--- Work Ends Here --->
+	<!--- Contact Starts Here --->
+	<div class="contact" id="contact">
+		<div class="container">
+			<div class="contact-top">
+				<h3>Contact</h3>
+				<small class="line1"><span> </span></small>
+				<p>Phasellus massa metus, pretium eu leo dapibus, elementum viverra libero. Duis vel mauris id justo accumsan pretium vel eu turpis. Ut hendrerit convallis magna. Duis faucibus ligula nec felis aliquet, at ultricies diam pellentesque.</p>
+				<small class="contact-tbot">Sed cursus erat eget rutrum consectetur.</small>
+			</div>
+			<div class="contact-bot">
+				<div class="contact-text">
+					<h5>Your Name</h5>
+					<input type="text" />
+				</div>
+				<div class="contact-text">
+					<h5>Your Email</h5>
+					<input type="text" />
+				</div>
+				<div class="contact-text">
+					<h5>Your Message</h5>
+					<textarea></textarea>
+				</div>
+				<input type="submit" value="Send Message" />
+			</div>
+		</div>
+	</div>
+	<!--- Contact Ends Here --->
+	<!--- Footer starts Here ---->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="social-bot">
+				<ul class="social-bot-ico">
+					<li><i class="tw"></i></li>
+					<li><i class="fa"></i></li>
+					<li><i class="gp"></i></li>
+					<li><i class="pin"></i></li>
+				</ul>
+				<p class="copyright">2014 &copy Template By <a href="http://w3layouts.com/">W3layouts</a></p>
+				<a href="#profile" class="scroll"><img src="./images/scroll3.png" class="scroll" alt=""/></a>
+			</div>
+			</div>
+		</div>
+	</div>
+	<!--- Footer Ends Here ---->
+</body>
+</html>

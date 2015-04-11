@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false" />
+    <constant name="struts.devMode" value="true" />
+    <constant name="struts.enable.DynamicMethodInvocation" value="true"/><!-- 允许DMI -->
+    <constant name="struts.custom.i18n.resources" value="messageResource"/><!-- 指定国际化资源文件的baseName为messageResource -->
+    <constant name="struts.i18n.encoding" value="utf-8"/><!-- 设置该应用使用的解码集 -->
+
+
+	<!-- 住户包 -->
+    <package name="resident" namespace="/resident" extends="json-default">
+    
+    	<!-- 登陆注册 -->
+    	<action name="loginAction" class="com.resident.action.LoginAction">
+    	
+    		<result name="success_isLogin" type="json">
+    			<param name="includeProperties">result</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	
+    		<result name="success_signin" type="json">
+    			<param name="includeProperties">user_id,username</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	
+    		<result name="success_login" type="json">
+    			<param name="includeProperties">user_id,community_id,username,community_name</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    		
+    		<result name="error" type="json">
+    			<param name="includeProperties">error</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	</action>
+    	
+    	<!-- 住户信息 -->
+    	<action name="userAction" class="com.resident.action.UserAction">
+    	
+    		<result name="success_setUser" type="json">
+    			<param name="includeProperties">community_id</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	
+    		<result name="success_getUser" type="json">
+    			<param name="includeProperties">residentEntity.*</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    		<result name="error" type="json">
+    			<param name="includeProperties">error</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    	</action>
+    	
+    	<!-- 小区信息 -->
+    	<action name="communityAction" class="com.resident.action.CommunityAction">
+    	
+    		<result name="success_getCommunity" type="json">
+    			<param name="root">pagination</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	
+    		<result name="success_getMyInfo" type="json">
+    			<param name="includeProperties">infoList.*</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	
+    		<result name="success_getMyInfoCount" type="json">
+    			<param name="includeProperties">result</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	
+    		<result name="success_getPhone" type="json">
+    			<param name="includeProperties">phoneList.*</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	
+    		
+    		<result name="error" type="json">
+    			<param name="includeProperties">error</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    	</action>
+    	
+    	<!-- 论坛 -->
+    	<action name="topicAction" class="com.resident.action.TopicAction">
+    		
+    		<result name="success_getTopics" type="json">
+    			<param name="includeProperties">pagination.*</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    		<result name="success_getTopicComments" type="json">
+    			<param name="includeProperties">pagination.*</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    		<result name="success_postTopicComment" type="json">
+    			<param name="includeProperties">result</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    		<result name="success_postTopic" type="json">
+    			<param name="includeProperties">result</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    		<result name="success_getMyTopics" type="json">
+    			<param name="includeProperties">pagination.*</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    		<result name="success_getMyComTopics" type="json">
+    			<param name="includeProperties">pagination.*</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    		<result name="success_getTopicById" type="json">
+    			<param name="includeProperties">topicEntity.*</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    		<result name="error" type="json">
+    			<param name="includeProperties">error</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    	</action>
+    	
+    </package>
+
+	<!-- 物业端 -->
+    <package name="manager" namespace="/manager" extends="json-default">
+    
+    	<!-- 登陆注册 -->
+    	<action name="loginAction" class="com.manager.action.LoginAction">
+    	    
+    		<result name="success_login" type="json">
+    		    <param name="includeProperties">user_id,community_id,is_super,username,community_name</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	    
+    		<result name="success_signin" type="json">
+    		    <param name="includeProperties">user_id,community_id,is_super,username</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	    
+    		<result name="success_isLogin" type="json">
+    		    <param name="includeProperties">result</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    		<result name="error" type="json">
+    			<param name="includeProperties">error</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    	</action>
+    	
+    	<!-- 公告+住户信息 -->
+    	<action name="communityAction" class="com.manager.action.CommunityAction">
+    	    
+    		<result name="success_postInfo" type="json">
+    		    <param name="includeProperties">result</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	    
+    		<result name="success_getInfos" type="json">
+    		    <param name="includeProperties">pagination.*</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	    
+    		<result name="success_searchUser" type="json">
+    		    <param name="includeProperties">pagination</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	    
+    		<result name="success_postPhone" type="json">
+    		    <param name="includeProperties">result</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    		<result name="error" type="json">
+    			<param name="includeProperties">error</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    	</action>
+    	
+    	<!-- 授权管理 -->
+    	<action name="authorAction" class="com.manager.action.AuthorAction">
+    	    
+    		<result name="success_getAuthors" type="json">
+    		    <param name="includeProperties">pagination.*</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    	    
+    		<result name="success_authorize" type="json">
+    		    <param name="includeProperties">result</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    			
+    		<result name="error" type="json">
+    			<param name="includeProperties">error</param>
+    			<param name="contentType">text/html</param> 
+    		</result>
+    		
+    	</action>
+    	
+    </package>
+    
+<!-- 
+json：可以将Action中的一个属性或多个属性以json格式响应输出 使用格式如下： 
+         如果需要返回一个属性值 
+         <result type="json"> 
+              <param name="root">Action属性</param> 
+         </result> 
+         如果需要返回多个属性值 
+         <result type="json"> 
+              <param name="includeProperties"> 
+					Action属性1,Action属性2 
+              </param> 
+         </result> 
+         如果需要返回所有属性值 
+         <result type="json"></result> 
+-->
+    
+
+</struts>

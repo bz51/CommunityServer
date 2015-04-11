@@ -1,0 +1,52 @@
+<!-- <!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd"> -->
+<!DOCTYPE hibernate-configuration PUBLIC
+ "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+ "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        
+        <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+     	
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">bz220382</property>
+       <property name="hibernate.connection.url">jdbc:mysql://115.28.217.42:3306/community?characterEncoding=utf-8</property>
+<!--         <property name="hibernate.connection.password">220382</property>
+       <property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/community?characterEncoding=utf-8</property> -->
+       
+      <!-- <property name="hibernate.connection.username">erhuo</property>
+          <property name="hibernate.connection.url">jdbc:mysql://115.29.226.21:3306/2goods?characterEncoding=utf-8</property>
+      <property name="hibernate.connection.password">erhuo</property>
+        -->
+        <!-- 
+        <property name="hibernate.connection.provider_class">org.hibernate.connection.C3P0ConnectionProvider</property>  
+        <property name="hibernate.c3p0.max_size">30</property>        
+        <property name="hibernate.c3p0.min_size">1</property>            
+        <property name="hibernate.c3p0.timeout">1800</property>            
+        <property name="hibernate.c3p0.max_statements">1000</property>            
+        <property name="hibernate.c3p0.idle_test_period">30000</property>            
+        <property name="hibernate.c3p0.acquire_increment">1</property>            
+        <property name="hibernate.c3p0.validate">true</property>  
+         -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.show_sql">true</property><!-- 配置显示sql语句 -->
+  		<property name="format_sql">true</property><!-- 让输出的sql语句格式化 -->
+  		
+        
+        <!-- resident -->
+        <mapping class="com.resident.entity.CommentEntity"/>
+        <mapping class="com.resident.entity.InfoEntity"/>
+        <mapping class="com.resident.entity.ResidentEntity"/>
+        <mapping class="com.resident.entity.TopicEntity"/>
+        <mapping class="com.resident.entity.PhoneEntity"/>
+        
+        <!-- manager -->
+        <mapping class="com.manager.entity.ManagerEntity"/>
+        <mapping class="com.manager.entity.CommunityEntity"/>
+         
+    </session-factory>
+</hibernate-configuration>
