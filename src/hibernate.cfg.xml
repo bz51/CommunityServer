@@ -37,16 +37,17 @@
   		<property name="format_sql">true</property><!-- 让输出的sql语句格式化 -->
   		
         
-        <!-- resident -->
-        <mapping class="com.resident.entity.CommentEntity"/>
-        <mapping class="com.resident.entity.InfoEntity"/>
-        <mapping class="com.resident.entity.ResidentEntity"/>
-        <mapping class="com.resident.entity.TopicEntity"/>
-        <mapping class="com.resident.entity.PhoneEntity"/>
+        <!-- teacher -->
+        <mapping class="com.rep.tea.entity.TeacherEntity"/>
+        <mapping class="com.rep.tea.entity.LoginLogEntity"/>
+        <mapping class="com.rep.tea.entity.DoLogEntity"/>
+        <mapping class="com.rep.tea.entity.ExpTeaEntity"/>
         
-        <!-- manager -->
-        <mapping class="com.manager.entity.ManagerEntity"/>
-        <mapping class="com.manager.entity.CommunityEntity"/>
+        <!-- student -->
+        <mapping class="com.rep.stu.entity.StudentEntity"/>
+        <mapping class="com.rep.stu.entity.LoginLogEntity"/>
+        <mapping class="com.rep.stu.entity.DoLogEntity"/>
+        <mapping class="com.rep.stu.entity.ExpStuEntity"/>
          
     </session-factory>
 </hibernate-configuration>
